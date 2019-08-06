@@ -12,6 +12,8 @@
 		F40F0A6222F90E0300B001F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40F0A6022F90E0300B001F6 /* Main.storyboard */; };
 		F40F0A6422F90E1E00B001F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40F0A6322F90E1E00B001F6 /* Assets.xcassets */; };
 		F40F0A6722F90E1E00B001F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40F0A6522F90E1E00B001F6 /* LaunchScreen.storyboard */; };
+		F40F0A7222F920DA00B001F6 /* UIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0A7122F920DA00B001F6 /* UIStackViewController.swift */; };
+		F40F0A7422F9212B00B001F6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0A7322F9212B00B001F6 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F40F0A6322F90E1E00B001F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40F0A6622F90E1E00B001F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40F0A6822F90E1E00B001F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40F0A7122F920DA00B001F6 /* UIStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewController.swift; sourceTree = "<group>"; };
+		F40F0A7322F9212B00B001F6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = UIStackView/View/TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		F40F0A5022F90E0300B001F6 = {
 			isa = PBXGroup;
 			children = (
+				F40F0A7322F9212B00B001F6 /* TableViewCell.swift */,
 				F40F0A5B22F90E0300B001F6 /* UIStackView */,
 				F40F0A5A22F90E0300B001F6 /* Products */,
 			);
@@ -55,13 +60,38 @@
 			isa = PBXGroup;
 			children = (
 				F40F0A5C22F90E0300B001F6 /* AppDelegate.swift */,
-				F40F0A5E22F90E0300B001F6 /* ViewController.swift */,
+				F40F0A7022F9206F00B001F6 /* Model */,
+				F40F0A6F22F9206400B001F6 /* View */,
+				F40F0A6E22F9204F00B001F6 /* Controller */,
 				F40F0A6022F90E0300B001F6 /* Main.storyboard */,
 				F40F0A6322F90E1E00B001F6 /* Assets.xcassets */,
 				F40F0A6522F90E1E00B001F6 /* LaunchScreen.storyboard */,
 				F40F0A6822F90E1E00B001F6 /* Info.plist */,
 			);
 			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		F40F0A6E22F9204F00B001F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0A5E22F90E0300B001F6 /* ViewController.swift */,
+				F40F0A7122F920DA00B001F6 /* UIStackViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F40F0A6F22F9206400B001F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F40F0A7022F9206F00B001F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F40F0A5F22F90E0300B001F6 /* ViewController.swift in Sources */,
+				F40F0A7422F9212B00B001F6 /* TableViewCell.swift in Sources */,
 				F40F0A5D22F90E0300B001F6 /* AppDelegate.swift in Sources */,
+				F40F0A7222F920DA00B001F6 /* UIStackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
